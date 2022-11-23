@@ -393,7 +393,7 @@ footer .nav-menu {
 }
 
 .frame_purple_contact {
-  padding: 5px;
+  padding: 30px 10px;
   margin-top: 42px;
   background-color: var(--purple);
   color: var(--light);

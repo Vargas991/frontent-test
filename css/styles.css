@@ -81,8 +81,10 @@ label{
 
 .header{
     background-color: var(--black);
-    height: 80px;
+    height: 140px;
 }
+
+
 
 .container {
     width: 90%;
@@ -105,10 +107,27 @@ label{
 }
 
 .nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 20px;
+    margin: auto;
 }
+
+@media (min-width: 900px) {
+    .header {
+        height: 80px;
+    }
+
+
+}
+
+#button_nav {
+    display: none;
+}
+
+
+#button_contact {
+    display: none;
+}
+
 
 .nav-menu{
     color: var(--light-grey);
@@ -118,8 +137,35 @@ label{
     align-items: center;
 }
 
-.logo{
-    width: 140px;
+.nav .logo{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    margin:0 auto;
+}
+
+@media (min-width: 900px) {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    #button_nav {
+        display: inline;
+    }
+    
+    #button_contact {
+        display: inline;
+    }
+
+    .nav .logo{
+        margin: 0;
+    }
+
+
 }
 .button_suscribe{
     height: 56px;
@@ -164,6 +210,7 @@ label{
     margin-right: 32px;
     width: 250px;
     height: 294px;
+    margin: 0 auto;
 }
 .author{
     background-color: var(--lavender);
@@ -172,10 +219,19 @@ label{
 }
 
 .author_info{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     padding: 128px 0;
+}
+
+@media (min-width:900px) {
+    .author_info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img_profile {
+        margin-right: 32px;
+    }
 }
 
 .author_heading{
@@ -200,6 +256,7 @@ label{
     width: 30%;
 }
 
+
 .social_wrapper{
     display: flex;
     gap: 16px;
@@ -210,16 +267,25 @@ label{
 }
 
 
+
 .image_post{
     width: 412px;
     height: 320px;
     margin-right: 32px;
 }
 
-.post_container{
-    display: flex;
+.post_container {
     margin-top: 64px;
 }
+
+@media (min-width:900px) {
+    .post_container {
+        display: flex;
+    }
+    
+}
+
+
 
 .description_post{
     color: var(--medium-grey);
@@ -227,6 +293,7 @@ label{
 }
 .text_post{
     display: flex;
+    margin-top: 15px;
     flex-direction: column;
     justify-content: space-evenly;
 }
@@ -246,27 +313,47 @@ label{
     padding: 60px 0;
 }
 
+footer .nav-menu {
+    display: block;
+    text-align: center;
+}
+
+@media (min-width: 900px) {
+
+    footer .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+    
+}
+
 .subscribe_footer{
-    display: flex;
-    justify-content: space-between;
     margin: 60px 0;
     padding: 80px 65px;
     background-color:rgba(255, 255, 255, 0.05) ;
 }
 
-
-
 .text_subscribe{
-    width: 50%;
+    width: 100%;
     color: var(--light);
     margin-right: 20px;
 }
 .input_subscribe{
+    width: 100%;
+}
+@media (min-width: 900px) {
+    .subscribe_footer {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+.input_subscribe {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 50%;
 }
+}
+
 
 .text_input{
     border: solid 1px var(--dark-grey);
@@ -288,6 +375,7 @@ label{
     margin: 0 auto;
 }
 .title_contact{
+    word-break: break-word;
     text-align: center;
     margin: 12px 0;
 }
@@ -298,22 +386,39 @@ label{
 }
 
 .frame_purple_contact{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
     padding: 48px 64px;
     margin-top: 42px;
     background-color: var(--purple);
     color: var(--light);
 }
 
+
 .working_hour{
-    width: 50%;
+
+    width: 100%;
     margin-right: 43px;
 }
 
 .contact_us_purple{
-    width: 50%;
+    width: 100%;
+    margin: 20px 0;
+}
+
+@media (min-width:900px) {
+    .frame_purple_contact {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .working_hour {
+        width: 50%;
+    }
+    
+    .contact_us_purple {
+        width: 50%;
+        margin: 0;
+    }
 }
 
 .form_container{
@@ -336,4 +441,9 @@ form{
     border: solid 1px var(--light);
     opacity: 0.5;
     margin: 16px 0;
+}
+
+.warning{
+   width: 200px;
+   color: rgb(176, 9, 9);
 }

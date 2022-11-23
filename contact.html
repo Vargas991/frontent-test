@@ -21,7 +21,13 @@
               <li><a href="#">Blog</a></li>
               <li><a href="#">About Us</a></li>
               <li><a href="contact.html">Contact Us</a></li>
-              <button href="#" class="button_suscribe white">Subscribe</button>
+              <button
+                href="#"
+                id="button_contact"
+                class="button_suscribe white"
+              >
+                Subscribe
+              </button>
             </ul>
           </div>
         </div>
@@ -53,17 +59,37 @@
               <p class="body1 working_hour_text">hello@finsweet.com</p>
             </div>
           </div>
+
           <div class="form_container">
-            <form action="">
-              <input class="text_input" type="text" placeholder="Full Name" />
-              <input class="text_input" type="text" placeholder="Your Email" />
+            <form action="" method="POST" id="form">
               <input
                 class="text_input"
+                id="fullName"
+                type="text"
+                placeholder="Full Name"
+              />
+              <p class="warning" id="nameWar"></p>
+              <input
+                class="text_input"
+                id="email"
+                type="text"
+                placeholder="Your Email"
+              />
+              <p class="warning" id="emailWar"></p>
+              <input
+                class="text_input"
+                id="query"
                 type="text"
                 placeholder="Query Related"
               />
-              <input class="text_input text_area" placeholder="Message" />
-              <button class="button_suscribe yellow full_widht">
+              <p class="warning" id="queryWar"></p>
+              <input
+                class="text_input text_area"
+                id="message"
+                placeholder="Message"
+              />
+              <p class="warning" id="messageWar"></p>
+              <button type="submit" class="button_suscribe yellow full_widht">
                 Send Message
               </button>
             </form>
@@ -82,7 +108,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="#">Blog</a></li>
               <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="#g">Contact Us</a></li>
               <li><a href="contact.html">Privacy Policy</a></li>
             </ul>
           </div>
@@ -122,5 +148,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>
